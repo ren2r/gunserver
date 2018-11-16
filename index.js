@@ -1,4 +1,4 @@
-const port = process.env.VCAP_APP_PORT || process.env.PORT || process.argv[2] || 8080
+const port = process.env.VCAP_APP_PORT || process.env.PORT || process.argv[2] || 80
 const Gun = require('gun')
 const server = require('http').createServer(Gun.serve).listen(port)
 Gun({
